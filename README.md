@@ -1,4 +1,4 @@
 # Häng
-- [Umfrage](umfrage.haeng.me)
-- [Git repository](git.haeng.me)
-- [Mockups](mockup.haeng.me)
+- [Umfrage](http://umfrage.haeng.me)
+- [Git repository](http://git.haeng.me)
+- [Mockups](http://mockup.haeng.me)

@@ -1,0 +1,20 @@
+{
+  "name": "zugbahnhof",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@fontsource/host-grotesk": "^5.2.5",
+    "@fontsource/playfair-display": "^5.2.5",
+    "@fontsource/space-grotesk": "^5.2.7",
+    "iconify-icon": "^3.0.0"
+  }
+}

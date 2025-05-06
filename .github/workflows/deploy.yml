@@ -24,15 +24,11 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
       name: Build
-    - name: Publish
-      uses: actions/upload-artifact@v4.6.2
+    - name: Upload static files as artifact
+      id: deployment
+      uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
       with:
-        name: 'github-pages'
-        # A file, directory or wildcard pattern that describes what to upload
-        path: dist
-        # The desired behavior if no files are found using the provided path.
-        if-no-files-found: error # optional, default is warn
-        overwrite: true
+        path: dist/
 
   # Deploy job
   deploy:

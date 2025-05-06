@@ -47,16 +47,47 @@ ul.projects {
 }
 
 ul.projects li {
-    padding: 1rem;
-    border-radius: 0.5rem;
+    --border-radius: 1rem;
+    --border-size: 0px;
+    --angle: 45deg;
+    padding: var(--border-size);
+    border-radius: var(--border-radius);
     background-color: var(--background-100);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(var(--gradient-angle), transparent, 70%, var(--background-100), 80%, transparent),
+    linear-gradient(to left, var(--accent-300), var(--primary-300));
+}
+
+@property --gradient-angle {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 180deg;
+}
+
+@keyframes gradient-rotate {
+    0% {
+        --gradient-angle: 0deg;
+    }
+
+    100% {
+        --gradient-angle: 360deg;
+    }
+}
+
+ul.projects li:hover, ul.projects li:focus, ul.projects li:focus-within {
+    --border-size: 2px;
+    --border-radius: 0.8rem;
 }
 
 ul.projects li:hover {
-    background-color: var(--background-200);
+    animation: gradient-rotate 10s cubic-bezier(0, 0, 1, 1) 0s infinite reverse;
 }
 
+
 ul.projects li a {
+    padding: calc(1rem - var(--border-size));
+    border-radius: calc(var(--border-radius) - var(--border-size));
+    --radius: 10000%;
     text-decoration: none;
     color: inherit;
     display: grid;
@@ -64,6 +95,16 @@ ul.projects li a {
     grid-template-rows: auto 1fr;
     column-gap: 1rem;
     row-gap: 0.3rem;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(
+            circle at 20% 110%,
+            var(--background-100) 0%,
+            var(--accent-100) var(--radius)
+    );
+}
+
+ul.projects li a:hover {
+    --radius: 150%;
 }
 
 ul.projects li a > img, ul.projects li a > iconify-icon {

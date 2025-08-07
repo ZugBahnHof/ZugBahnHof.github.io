@@ -115,3 +115,34 @@ ul.projects li a > img, ul.projects li a > iconify-icon {
     height: 100%;
     grid-row: span 2;
 }
+
+ul.skills {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+ul.skills li {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--accent-100);
+    color: var(--text-900);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+ul.skills li > iconify-icon {
+    width: 1.5em;
+    height: 1.5em;
+    color: var(--text-300);
+}

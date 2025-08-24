@@ -122,12 +122,11 @@ ul.skills {
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 ul.skills li {
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.5rem;
     border-radius: 1rem;
     background-color: var(--accent-100);
     color: var(--text-900);
@@ -138,11 +137,15 @@ ul.skills li {
 
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.25rem;
 }
 
 ul.skills li > iconify-icon {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
     color: var(--text-300);
+}
+
+ul.skills li > h3 {
+    font-size: 1em;
 }

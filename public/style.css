@@ -30,9 +30,13 @@ header {
 }
 
 header > img {
-    min-width: 100px;
-    min-height: 100px;
+    width: 100px;
+    height: 100px;
     aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-300);
+    text-align: center;
 }
 
 /* ul.projects li a > [img, h3, p] */

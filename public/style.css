@@ -111,13 +111,17 @@ ul.projects li a:hover {
     --radius: 150%;
 }
 
-ul.projects li a > img, ul.projects li a > iconify-icon {
+ul.projects li a > img, ul.projects li a > iconify-icon,
+ul.projects li a > img, ul.projects li a > img,
+ul.projects li a > img, ul.projects li a > svg
+{
     border-radius: 0.5rem;
     object-fit: contain;
     aspect-ratio: 1 / 1;
     width: 100%;
     height: 100%;
     grid-row: span 2;
+    fill: currentColor;
 }
 
 ul.skills {

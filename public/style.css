@@ -59,7 +59,7 @@ ul.projects li {
     background-color: var(--background-100);
     background-repeat: no-repeat;
     background-image: linear-gradient(var(--gradient-angle), transparent, 70%, var(--background-100), 80%, transparent),
-    linear-gradient(to left, var(--accent-300), var(--primary-300));
+    linear-gradient(to left, var(--accent-300), var(--primary-400));
 }
 
 @property --gradient-angle {
@@ -124,7 +124,8 @@ ul.projects li a > img, ul.projects li a > svg
     fill: currentColor;
 }
 
-ul.skills {
+ul.skills,
+ul.links {
     list-style: none;
     padding: 0;
 
@@ -133,11 +134,12 @@ ul.skills {
     gap: 0.5rem;
 }
 
-ul.skills li {
+ul.skills li,
+ul.links li a {
     padding: 0.25rem 0.5rem;
     border-radius: 1rem;
     background-color: var(--accent-100);
-    color: var(--text-900);
+    color: var(--accent-950);
     --skill-color: var(--primary-100);
     --skill-text-color: var(--primary-900);
 
@@ -152,12 +154,14 @@ ul.skills li {
     cursor: default;
 }
 
-ul.skills li:hover {
+ul.skills li:hover,
+ul.links li a:hover {
     background-color: var(--skill-color);
     color: var(--skill-text-color);
 }
 
-ul.skills li:hover::before {
+ul.skills li:hover::before,
+ul.links li a:hover::before {
     content: "";
     display: block;
     position: absolute;
@@ -172,16 +176,38 @@ ul.skills li:hover::before {
     background: radial-gradient(ellipse at 50% 50%, var(--skill-color), transparent 70%);
 }
 
-ul.skills li > iconify-icon {
-    width: 1em;
-    height: 1em;
-    color: var(--accent-400);
+ul.skills li > iconify-icon,
+ul.skills li > span,
+ul.links li a > iconify-icon,
+ul.links li a > span{
+    width: 1.5em;
+    height: 1.5em;
+    color: var(--accent-800);
 }
 
-ul.skills li:hover > iconify-icon {
+ul.skills li:hover > iconify-icon,
+ul.skills li:hover > span,
+ul.links li a:hover > iconify-icon,
+ul.links li a:hover > span {
     color: var(--skill-text-color);
 }
 
-ul.skills li > h3 {
+ul.skills li > h3,
+ul.links li a > h3 {
     font-size: 1em;
+}
+
+ul.links li a {
+    text-decoration: none;
+
+    background-color: var(--secondary-100);
+    color: var(--secondary-900);
+
+    --skill-color: var(--secondary-100);
+    --skill-text-color: var(--secondary-900);
+}
+
+ul.links li a > iconify-icon,
+ul.links li a > span {
+    color: var(--secondary-700);
 }

@@ -138,6 +138,8 @@ ul.skills li {
     border-radius: 1rem;
     background-color: var(--accent-100);
     color: var(--text-900);
+    --skill-color: var(--primary-100);
+    --skill-text-color: var(--primary-900);
 
     white-space: nowrap;
     overflow: hidden;
@@ -146,12 +148,23 @@ ul.skills li {
     display: flex;
     align-items: center;
     gap: 0.25rem;
+
+    cursor: default;
+}
+
+ul.skills li:hover {
+    background-color: var(--skill-color);
+    color: var(--skill-text-color);
 }
 
 ul.skills li > iconify-icon {
     width: 1em;
     height: 1em;
-    color: var(--text-300);
+    color: var(--accent-400);
+}
+
+ul.skills li:hover > iconify-icon {
+    color: var(--skill-text-color);
 }
 
 ul.skills li > h3 {

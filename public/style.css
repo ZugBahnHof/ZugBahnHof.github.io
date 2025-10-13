@@ -143,8 +143,6 @@ ul.skills li,
 ul.links li a {
     padding: 0.25rem 0.5rem;
     border-radius: 1rem;
-    background-color: var(--accent-100);
-    color: var(--accent-950);
     --skill-color: var(--primary-100);
     --skill-text-color: var(--primary-900);
 
@@ -157,6 +155,20 @@ ul.links li a {
     position: relative;
 
     cursor: default;
+
+    --n: 1;
+    --count: 25;
+
+    background: color-mix(in srgb,
+        var(--accent-100) calc((1 - ((var(--n) - 1) / (var(--count) - 1))) * 100%),
+        var(--secondary-100)
+    );
+
+    --fg: color-mix(in srgb,
+        var(--accent-900) calc((1 - ((var(--n) - 1) / (var(--count) - 1))) * 100%),
+        var(--secondary-900)
+      );
+    color: var(--fg);
 }
 
 ul.skills li:hover,
@@ -187,7 +199,7 @@ ul.links li a > iconify-icon,
 ul.links li a > span{
     width: 1.5em;
     height: 1.5em;
-    color: var(--accent-800);
+    color: var(--fg);
 }
 
 ul.skills li:hover > iconify-icon,
@@ -214,5 +226,5 @@ ul.links li a {
 
 ul.links li a > iconify-icon,
 ul.links li a > span {
-    color: var(--secondary-800);
+    color: var(--secondary-900);
 }

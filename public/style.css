@@ -214,5 +214,5 @@ ul.links li a {
 
 ul.links li a > iconify-icon,
 ul.links li a > span {
-    color: var(--secondary-700);
+    color: var(--secondary-800);
 }

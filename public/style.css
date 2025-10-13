@@ -45,6 +45,15 @@ header > img, header > figure {
 }
 section {
     margin-block-end: 2rem;
+    outline: 0.25em dashed transparent;
+    border-radius: 1em;
+    outline-offset: 0.6rem;
+}
+section:hover {
+    outline-color: var(--secondary-400);
+}
+section:nth-child(even):hover {
+    outline-color: var(--primary-400);
 }
 
 /* ul.projects li a > [img, h3, p] */

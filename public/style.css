@@ -96,7 +96,7 @@ ul.projects li {
 }
 
 ul.projects li:hover, ul.projects li:focus, ul.projects li:focus-within {
-    --border-size: 2px;
+    --border-size: 3px;
     --border-radius: 0.8rem;
 }
 

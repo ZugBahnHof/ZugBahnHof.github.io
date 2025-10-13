@@ -229,6 +229,7 @@ ul.links li a > h3 {
 
 ul.links li a {
     text-decoration: none;
+    cursor: pointer;
 
     background-color: var(--secondary-100);
     color: var(--secondary-900);

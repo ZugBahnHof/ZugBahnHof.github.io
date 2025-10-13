@@ -1,6 +1,7 @@
 import "iconify-icon";
 import '@fontsource/host-grotesk';
-import '@fontsource/playfair-display';
+import '@fontsource/space-grotesk';
+import '@fontsource/major-mono-display';
 
 document.querySelectorAll('.icon-container').forEach(container => {
     const src = container.getAttribute("data-src");

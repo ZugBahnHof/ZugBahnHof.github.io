@@ -9,12 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^6.3.5"
+    "vite": "7.1.5"
   },
   "dependencies": {
-    "@fontsource/host-grotesk": "^5.2.5",
-    "@fontsource/playfair-display": "^5.2.5",
-    "@fontsource/space-grotesk": "^5.2.7",
+    "@fontsource/host-grotesk": "^5.2.8",
+    "@fontsource/major-mono-display": "^5.2.8",
+    "@fontsource/space-grotesk": "^5.2.8",
     "iconify-icon": "^3.0.0"
   }
 }

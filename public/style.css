@@ -19,6 +19,7 @@ body {
 
 .spacer {
     flex: 1;
+    flex-basis: 1em;
 }
 
 header {
@@ -41,6 +42,9 @@ header > img, header > figure {
     align-items: center;
     justify-content: center;
     margin: 0;
+}
+section {
+    margin-block-end: 2rem;
 }
 
 /* ul.projects li a > [img, h3, p] */

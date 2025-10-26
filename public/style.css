@@ -36,7 +36,7 @@ header > img, header > figure {
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--primary-300);
+    border: 2px groove var(--primary-400);
     text-align: center;
     display: flex;
     align-items: center;

@@ -170,7 +170,7 @@ ul.links li a {
     cursor: default;
 
     --n: 1;
-    --count: 25;
+    --count: 26;
 
     background: color-mix(in srgb,
         var(--accent-100) calc((1 - ((var(--n) - 1) / (var(--count) - 1))) * 100%),

@@ -203,7 +203,7 @@ ul.links li a:hover::before {
     top: -50%;
     left: -25%;
 
-    background: radial-gradient(ellipse at 50% 50%, var(--skill-color), transparent 70%);
+    background: radial-gradient(ellipse at 50% 50%, var(--skill-color), transparent 55%);
 }
 
 ul.skills li > iconify-icon,

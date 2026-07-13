@@ -5,7 +5,7 @@ import "@fontsource/space-grotesk";
 import "@fontsource/major-mono-display";
 
 import { Icon } from "astro-icon/components";
-
+import { PROJECTS } from "../content/projects.ts";
 import { SKILLS } from "../content/skills.ts";
 
 const buildDate = new Date().toLocaleDateString();
@@ -115,123 +115,24 @@ const buildDate = new Date().toLocaleDateString();
     <section>
     <h2>My Projects</h2>
     <ul class="projects">
-        <li>
-            <a href="https://aleksis.org">
-                <img src="https://edugit.org/AlekSIS/official/AlekSIS-Core/-/raw/master/aleksis/core/static/img/aleksis-icon.svg?ref_type=heads&inline=false"
-                     alt="AlekSIS® Logo"/>
-                <h3>AlekSIS®²</h3>
-                <p>Participated in the development of the open source school information system.</p>
-            </a>
-        </li>
-
-        <li>
-            <a href="https://pypi.org/project/color-contrast">
-                <Icon
-                    name="line-md:confirm-circle-twotone"
-                    height="100%"
-                    style="color: var(--text-700);"
-                ></Icon>
-                <h3>color-contrast</h3>
-                <p>A python library to calculate and modulate color contrasts according to WCAG2.1</p>
-            </a>
-        </li>
-
-        <li>
-            <a href="https://yarnpkg.com/package?q=vue-draggable-grid&name=vue-draggable-grid">
-                <Icon
-                    name="uim:vuejs-alt"
-                    height="100%"
-                    style="color: var(--text-700);"
-                ></Icon>
-                <h3>Vue Draggable Grid</h3>
-                <p>A library for Vue3 which allows drag&drop functionality in a grid context.</p>
-            </a>
-        </li>
-
-        <li>
-            <a href="https://color-search.netlify.app">
-                <Icon
-                    name="ion:color-filter-sharp"
-                    height="100%"
-                    style="color: var(--text-700);"
-                ></Icon>
-                <h3>Color Tool</h3>
-                <p>Small tool to view and modify colors. Acts as a search engine in your browser.</p>
-            </a>
-        </li>
-
-        <li>
-            <a href="https://github.com/ZugBahnHof/obsidian-plugin-wiener-linien">
-                <Icon
-                    name="ph:train-duotone"
-                    height="100%"
-                    style="color: var(--text-700);"
-                ></Icon>
-                <h3>Obsidian Wiener Linien Plugin</h3>
-                <p>Obsidian Plugin to view next trains at your stations in vienna.</p>
-            </a>
-        </li>
-
-        <li>
-            <a href="https://zugbahnhof.github.io/egg-generator/">
-                <Icon
-                    name="ph:egg-duotone"
-                    height="100%"
-                    style="color: var(--text-700);"
-                ></Icon>
-                <h3>Egg Generator</h3>
-                <p>Fun side-project which draws eggs on the screen.</p>
-            </a>
-        </li>
-
-        <li>
-            <a href="https://zugbahnhof.github.io/JSCounter/">
-                <Icon
-                    name="mdi:counter"
-                    height="100%"
-                    style="color: var(--text-700);"
-                ></Icon>
-                <h3>Counter</h3>
-                <p>Big graphic countdown.</p>
-            </a>
-        </li>
-
-        <li>
-            <a href="https://yarnpkg.com/package?q=vue3-interactjs&name=vue3-interactjs">
-                <Icon
-                    name="simple-icons:interactjs"
-                    height="100%"
-                    style="color: var(--text-700);"
-                ></Icon>
-                <h3>Vue3-Interactjs</h3>
-                <p>A library wrapping interact.js into Vue3 components.</p>
-            </a>
-        </li>
-
-        <li>
-            <a href="https://heloisewilland.de">
-                <Icon
-                    name="heloise"
-                    hanging="100%"
-                    style="color: var(--text-700);"
-                >Héloïse Willand personal Logo
-                </Icon>
-                <h3>Homepage of Héloïse Willand</h3>
-                <p>Wordpress-based homepage of musician and photographer Héloïse Willand.</p>
-            </a>
-        </li>
-
-        <li>
-            <a href="/fluid-sim/">
-                <Icon
-                    name="fluent-emoji-high-contrast:water-wave"
-                    height="100%"
-                    style="color: var(--text-700);"
-                ></Icon>
-                <h3>Web Gyroscope Demo</h3>
-                <p>Fluid simulating side-project using the web device accelerator api.</p>
-            </a>
-        </li>
+        {PROJECTS.map((project) => (
+            <li>
+                <a href={project.url}>
+                    {project.icon && (
+                        <Icon
+                            name={project.icon}
+                            height="100%"
+                            style="color: var(--text-700);"
+                        ></Icon>
+                    )}
+                    {project.image && (
+                        <img src={project.image} alt={project.imageAlt} />
+                    )}
+                    <h3>{project.name}</h3>
+                    <p>{project.description}</p>
+                </a>
+            </li>
+        ))}
     </ul>
     </section>
 

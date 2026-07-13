@@ -16,7 +16,8 @@
 		"enabled": true,
 		"rules": {
 			"preset": "recommended"
-		}
+		},
+		"includes": ["**", "!public/**/*.svg"]
 	},
 	"javascript": {
 		"formatter": {

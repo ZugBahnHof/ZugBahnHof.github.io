@@ -43,6 +43,12 @@ export const SKILLS: Skill[] = [
 		textColor: "#FFFFFF",
 	},
 	{
+		name: "TailwindCSS",
+		icon: "simple-icons:tailwindcss",
+		color: "#38bdf8",
+		textColor: "#FFFFFF",
+	},
+	{
 		name: "Wordpress",
 		icon: "mdi:wordpress",
 		color: "#3858e9",
@@ -67,6 +73,12 @@ export const SKILLS: Skill[] = [
 		textColor: "#FFFFFF",
 	},
 	{
+		name: "Neo4J",
+		icon: "simple-icons:neo4j",
+		color: "#0a5d8a",
+		textColor: "#FFFFFF",
+	},
+	{
 		name: "Photography",
 		icon: "mdi:camera",
 	},
@@ -80,6 +92,18 @@ export const SKILLS: Skill[] = [
 		name: "GraphQL",
 		icon: "mdi:graphql",
 		color: "rgb(225, 0, 154)",
+		textColor: "#FFFFFF",
+	},
+	{
+		name: "Firebase",
+		icon: "simple-icons:firebase",
+		color: "#FFCA28",
+		textColor: "#222222",
+	},
+	{
+		name: "Traefik",
+		icon: "simple-icons:traefikproxy",
+		color: "#37abc8",
 		textColor: "#FFFFFF",
 	},
 	{
@@ -117,10 +141,28 @@ export const SKILLS: Skill[] = [
 		textColor: "#222222",
 	},
 	{
+		name: "Docker",
+		icon: "mdi:docker",
+		color: "#2560FF",
+		textColor: "#FFFFFF",
+	},
+	{
 		name: "PyTorch",
 		icon: "cib:pytorch",
 		color: "#de3412",
 		textColor: "#222222",
+	},
+	{
+		name: "React Native",
+		icon: "mdi:react",
+		color: "#087EA4",
+		textColor: "#FFFFFF",
+	},
+	{
+		name: "Expo",
+		icon: "simple-icons:expo",
+		color: "#000000",
+		textColor: "#FFFFFF",
 	},
 	{
 		name: "Flutter",
@@ -131,6 +173,12 @@ export const SKILLS: Skill[] = [
 	{
 		name: "Problog",
 		icon: "bitcoin-icons:node-2-connections-outline",
+	},
+	{
+		name: "RabbitMQ",
+		icon: "simple-icons:rabbitmq",
+		color: "#ff6600",
+		textColor: "#242938",
 	},
 	{
 		name: "Arduino",

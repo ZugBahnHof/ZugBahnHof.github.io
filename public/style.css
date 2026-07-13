@@ -261,3 +261,15 @@ ul.links li a > svg,
 ul.links li a > span {
 	color: var(--secondary-900);
 }
+
+footer a {
+	color: var(--primary-700);
+	text-decoration: none;
+}
+footer a:hover {
+	color: var(--secondary-700);
+}
+footer a:active,
+footer a:focus {
+	color: var(--accent-400);
+}

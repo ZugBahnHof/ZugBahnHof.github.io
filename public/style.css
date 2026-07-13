@@ -161,6 +161,8 @@ ul.links {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.5rem;
+
+	--count: 1;
 }
 
 ul.skills li,
@@ -181,7 +183,6 @@ ul.links li a {
 	cursor: default;
 
 	--n: 1;
-	--count: 26;
 
 	background: color-mix(
 		in srgb,

@@ -85,4 +85,10 @@ export const PROJECTS: Project[] = [
 		url: "/fluid-sim/",
 		icon: "fluent-emoji-high-contrast:water-wave",
 	},
+	{
+		name: "Candidate Guesser",
+		description: "Game to guess th political party of European politicians.",
+		url: "/candidate-guesser/",
+		icon: "mdi:account-check-outline",
+	},
 ];

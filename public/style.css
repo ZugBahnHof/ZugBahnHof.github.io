@@ -31,13 +31,14 @@ header {
 }
 
 header > img,
+header > svg,
 header > figure {
 	width: 100px;
 	height: 100px;
 	aspect-ratio: 1 / 1;
 	border-radius: 50%;
 	object-fit: cover;
-	border: 2px groove var(--primary-400);
+	border: 2px groove var(--primary-100);
 	text-align: center;
 	display: flex;
 	align-items: center;

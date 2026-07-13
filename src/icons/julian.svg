@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1024"
+   height="1024"
+   viewBox="0 0 270.93333 270.93333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="J_path.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.52891526"
+     inkscape:cx="522.76805"
+     inkscape:cy="652.2784"
+     inkscape:window-width="1648"
+     inkscape:window-height="961"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#00ffff;stroke-width:0.190747;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke;stroke:none"
+       id="path1"
+       cx="135.46666"
+       cy="135.46666"
+       r="122.76666" />
+    <path
+       style="font-weight:bold;font-size:270.933px;font-family:'Geist ExtraBold';-inkscape-font-specification:'Geist ExtraBold,  Bold';text-align:center;text-anchor:middle;stroke-width:0.133615;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       d="m 137.09235,242.63763 q -24.11304,0 -40.36902,-9.75359 -16.255981,-9.75358 -24.654904,-26.55143 -8.398924,-17.06878 -8.669857,-38.47249 l 47.142341,-2.16746 q 0.54187,20.04904 7.3152,29.26076 7.04425,9.21172 19.23624,9.21172 11.92105,0 18.69438,-8.39892 7.04426,-8.66986 7.04426,-27.36423 V 45.940264 h 47.14234 V 168.40199 q 0,22.75837 -9.21172,39.55622 -9.21173,16.52691 -25.73864,25.73863 -16.25598,8.94079 -37.93062,8.94079 z"
+       id="text1"
+       aria-label="J" />
+  </g>
+</svg>

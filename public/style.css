@@ -1,244 +1,262 @@
 body {
-    background-color: var(--background);
-    background-image: radial-gradient(
-            circle at 70% 70%,
-            var(--secondary-50) 0%,
-            var(--primary-50) 100%
-    );
+	background-color: var(--background);
+	background-image: radial-gradient(
+		circle at 70% 70%,
+		var(--secondary-50) 0%,
+		var(--primary-50) 100%
+	);
 
-    color: var(--text);
+	color: var(--text);
 
-    max-width: clamp(600px, 90vw, 900px);
-    margin-inline: auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+	max-width: clamp(600px, 90vw, 900px);
+	margin-inline: auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 
-    padding: 1rem;
+	padding: 1rem;
 }
 
 .spacer {
-    flex: 1;
-    flex-basis: 1em;
+	flex: 1;
+	flex-basis: 1em;
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-    margin-block: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	align-items: center;
+	margin-block: 2rem;
 }
 
-header > img, header > figure {
-    width: 100px;
-    height: 100px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px groove var(--primary-400);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
+header > img,
+header > figure {
+	width: 100px;
+	height: 100px;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px groove var(--primary-400);
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
 }
 section {
-    margin-block-end: 2rem;
-    outline: 0.25em dashed transparent;
-    border-radius: 1em;
-    outline-offset: 0.6rem;
+	margin-block-end: 2rem;
+	outline: 0.25em dashed transparent;
+	border-radius: 1em;
+	outline-offset: 0.6rem;
 }
 section:hover {
-    outline-color: var(--secondary-400);
+	outline-color: var(--secondary-400);
 }
 section:nth-child(even):hover {
-    outline-color: var(--primary-400);
+	outline-color: var(--primary-400);
 }
 
 /* ul.projects li a > [img, h3, p] */
 
 ul.projects {
-    list-style: none;
-    padding: 0;
+	list-style: none;
+	padding: 0;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 1rem;
 }
 
 ul.projects li {
-    --border-radius: 1rem;
-    --border-size: 0px;
-    --angle: 45deg;
-    padding: var(--border-size);
-    border-radius: var(--border-radius);
-    background-color: var(--background-100);
-    background-repeat: no-repeat;
-    background-image: linear-gradient(var(--gradient-angle), transparent, 70%, var(--background-100), 80%, transparent),
-    linear-gradient(to left, var(--accent-300), var(--primary-400));
+	--border-radius: 1rem;
+	--border-size: 0px;
+	--angle: 45deg;
+	padding: var(--border-size);
+	border-radius: var(--border-radius);
+	background-color: var(--background-100);
+	background-repeat: no-repeat;
+	background-image:
+		linear-gradient(
+			var(--gradient-angle),
+			transparent,
+			70%,
+			var(--background-100),
+			80%,
+			transparent
+		),
+		linear-gradient(to left, var(--accent-300), var(--primary-400));
 }
 
 @property --gradient-angle {
-    syntax: '<angle>';
-    inherits: false;
-    initial-value: 180deg;
+	syntax: "<angle>";
+	inherits: false;
+	initial-value: 180deg;
 }
 
 @keyframes gradient-rotate {
-    0% {
-        --gradient-angle: 0deg;
-    }
+	0% {
+		--gradient-angle: 0deg;
+	}
 
-    100% {
-        --gradient-angle: 360deg;
-    }
+	100% {
+		--gradient-angle: 360deg;
+	}
 }
 
-ul.projects li:hover, ul.projects li:focus, ul.projects li:focus-within {
-    --border-size: 3px;
-    --border-radius: 0.8rem;
+ul.projects li:hover,
+ul.projects li:focus,
+ul.projects li:focus-within {
+	--border-size: 3px;
+	--border-radius: 0.8rem;
 }
 
 ul.projects li:hover {
-    animation: gradient-rotate 10s cubic-bezier(0, 0, 1, 1) 0s infinite reverse;
+	animation: gradient-rotate 10s cubic-bezier(0, 0, 1, 1) 0s infinite reverse;
 }
 
-
 ul.projects li a {
-    padding: calc(1rem - var(--border-size));
-    border-radius: calc(var(--border-radius) - var(--border-size));
-    --radius: 10000%;
-    text-decoration: none;
-    color: inherit;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto 1fr;
-    column-gap: 1rem;
-    row-gap: 0.3rem;
-    background-repeat: no-repeat;
-    background-image: radial-gradient(
-            circle at 20% 110%,
-            var(--background-100) 0%,
-            var(--accent-100) var(--radius)
-    );
+	padding: calc(1rem - var(--border-size));
+	border-radius: calc(var(--border-radius) - var(--border-size));
+	--radius: 10000%;
+	text-decoration: none;
+	color: inherit;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: auto 1fr;
+	column-gap: 1rem;
+	row-gap: 0.3rem;
+	background-repeat: no-repeat;
+	background-image: radial-gradient(
+		circle at 20% 110%,
+		var(--background-100) 0%,
+		var(--accent-100) var(--radius)
+	);
 }
 
 ul.projects li a:hover {
-    --radius: 150%;
+	--radius: 150%;
 }
 
-ul.projects li a > img, ul.projects li a > iconify-icon,
-ul.projects li a > img, ul.projects li a > img,
-ul.projects li a > img, ul.projects li a > svg
-{
-    border-radius: 0.5rem;
-    object-fit: contain;
-    aspect-ratio: 1 / 1;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    grid-row: span 2;
-    fill: currentColor;
+ul.projects li a > img,
+ul.projects li a > iconify-icon,
+ul.projects li a > img,
+ul.projects li a > img,
+ul.projects li a > img,
+ul.projects li a > svg {
+	border-radius: 0.5rem;
+	object-fit: contain;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	grid-row: span 2;
+	fill: currentColor;
 }
 
 ul.skills,
 ul.links {
-    list-style: none;
-    padding: 0;
+	list-style: none;
+	padding: 0;
 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
 }
 
 ul.skills li,
 ul.links li a {
-    padding: 0.25rem 0.5rem;
-    border-radius: 1rem;
-    --skill-color: var(--primary-100);
-    --skill-text-color: var(--primary-900);
+	padding: 0.25rem 0.5rem;
+	border-radius: 1rem;
+	--skill-color: var(--primary-100);
+	--skill-text-color: var(--primary-900);
 
-    white-space: nowrap;
-    text-overflow: ellipsis;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    position: relative;
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	position: relative;
 
-    cursor: default;
+	cursor: default;
 
-    --n: 1;
-    --count: 26;
+	--n: 1;
+	--count: 26;
 
-    background: color-mix(in srgb,
-        var(--accent-100) calc((1 - ((var(--n) - 1) / (var(--count) - 1))) * 100%),
-        var(--secondary-100)
-    );
+	background: color-mix(
+		in srgb,
+		var(--accent-100) calc((1 - ((var(--n) - 1) / (var(--count) - 1))) * 100%),
+		var(--secondary-100)
+	);
 
-    --fg: color-mix(in srgb,
-        var(--accent-900) calc((1 - ((var(--n) - 1) / (var(--count) - 1))) * 100%),
-        var(--secondary-900)
-      );
-    color: var(--fg);
+	--fg: color-mix(
+		in srgb,
+		var(--accent-900) calc((1 - ((var(--n) - 1) / (var(--count) - 1))) * 100%),
+		var(--secondary-900)
+	);
+	color: var(--fg);
 }
 
 ul.skills li:hover,
 ul.links li a:hover {
-    background-color: var(--skill-color);
-    color: var(--skill-text-color);
+	background-color: var(--skill-color);
+	color: var(--skill-text-color);
 }
 
 ul.skills li:hover::before,
 ul.links li a:hover::before {
-    content: "";
-    display: block;
-    position: absolute;
+	content: "";
+	display: block;
+	position: absolute;
 
-    z-index: -1;
+	z-index: -1;
 
-    width: 150%;
-    height: 200%;
-    top: -50%;
-    left: -25%;
+	width: 150%;
+	height: 200%;
+	top: -50%;
+	left: -25%;
 
-    background: radial-gradient(ellipse at 50% 50%, var(--skill-color), transparent 55%);
+	background: radial-gradient(
+		ellipse at 50% 50%,
+		var(--skill-color),
+		transparent 55%
+	);
 }
 
 ul.skills li > iconify-icon,
 ul.skills li > span,
 ul.links li a > iconify-icon,
-ul.links li a > span{
-    width: 1.5em;
-    height: 1.5em;
-    color: var(--fg);
+ul.links li a > span {
+	width: 1.5em;
+	height: 1.5em;
+	color: var(--fg);
 }
 
 ul.skills li:hover > iconify-icon,
 ul.skills li:hover > span,
 ul.links li a:hover > iconify-icon,
 ul.links li a:hover > span {
-    color: var(--skill-text-color);
+	color: var(--skill-text-color);
 }
 
 ul.skills li > h3,
 ul.links li a > h3 {
-    font-size: 1em;
+	font-size: 1em;
 }
 
 ul.links li a {
-    text-decoration: none;
-    cursor: pointer;
+	text-decoration: none;
+	cursor: pointer;
 
-    background-color: var(--secondary-100);
-    color: var(--secondary-900);
+	background-color: var(--secondary-100);
+	color: var(--secondary-900);
 
-    --skill-color: var(--secondary-100);
-    --skill-text-color: var(--secondary-900);
+	--skill-color: var(--secondary-100);
+	--skill-text-color: var(--secondary-900);
 }
 
 ul.links li a > iconify-icon,
 ul.links li a > span {
-    color: var(--secondary-900);
+	color: var(--secondary-900);
 }

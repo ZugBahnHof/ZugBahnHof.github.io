@@ -1,25 +1,25 @@
 {
-  "name": "zugbahnhof",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "reformat": "biome check --write",
-    "lint": "biome check"
-  },
-  "devDependencies": {
-    "vite": "7.1.5"
-  },
-  "dependencies": {
-    "@fontsource/host-grotesk": "^5.2.8",
-    "@fontsource/major-mono-display": "^5.2.8",
-    "@fontsource/space-grotesk": "^5.2.8",
-    "astro": "^7.0.7",
-    "biomejs": "^0.0.0",
-    "iconify-icon": "^3.0.0"
-  }
+	"name": "zugbahnhof",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"reformat": "biome check --write",
+		"lint": "biome check"
+	},
+	"devDependencies": {
+		"vite": "7.1.5"
+	},
+	"dependencies": {
+		"@biomejs/biome": "^2.5.3",
+		"@fontsource/host-grotesk": "^5.2.8",
+		"@fontsource/major-mono-display": "^5.2.8",
+		"@fontsource/space-grotesk": "^5.2.8",
+		"astro": "^7.0.7",
+		"iconify-icon": "^3.0.0"
+	}
 }

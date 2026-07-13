@@ -1,40 +1,48 @@
 :root {
-    font-family: 'Host Grotesk', system-ui, 'Inter', 'Cantarell', sans-serif;
+	font-family: "Host Grotesk", system-ui, "Inter", "Cantarell", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    font-family: 'Space Grotesk', 'Host Grotesk', 'Ubuntu', 'Inter', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: "Space Grotesk", "Host Grotesk", "Ubuntu", "Inter", sans-serif;
 }
 
 p {
-    margin: 0;
+	margin: 0;
 }
 
 iconify-icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
 }
 
 #name {
-    font-family: 'Major Mono Display', sans-serif;
-    background: linear-gradient(45deg, var(--secondary-500), var(--primary-500));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+	font-family: "Major Mono Display", sans-serif;
+	background: linear-gradient(45deg, var(--secondary-500), var(--primary-500));
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
 
-h1, .h1 {
-    font-size: 2rem;
+h1,
+.h1 {
+	font-size: 2rem;
 }
-h2, .h2 {
-    font-size: 1.5rem;
+h2,
+.h2 {
+	font-size: 1.5rem;
 }
-h3, .h3 {
-    font-size: 1.25rem;
+h3,
+.h3 {
+	font-size: 1.25rem;
 }
-h4, .h4 {
-    font-size: 1.125rem;
+h4,
+.h4 {
+	font-size: 1.125rem;
 }
-

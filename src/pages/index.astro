@@ -1,5 +1,5 @@
 ---
-
+const buildDate = new Date().toLocaleDateString();
 ---
 
 <!doctype html>
@@ -418,7 +418,7 @@
 <div class="spacer"></div>
 
 <footer>
-    <p>© 2025 Julian Leucker</p>
+    <p>© 2026 Julian Leucker</p>
     <p>All rights reserved.</p>
     <p>
         This site uses handwritten HTML, CSS and JS and does not use any frontend frameworks.
@@ -438,6 +438,7 @@
         </p>
     </details>
     <p>2: AlekSIS® is a registered trademark of the AlekSIS open source project, represented by Teckids e.V.</p>
+    <p>Last built on: {buildDate}</p>
 </footer>
 <script type="module" src="/src/main.js"></script>
 </body>

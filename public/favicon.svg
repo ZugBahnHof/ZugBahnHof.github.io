@@ -1,9 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
-    <path d="M50.4 78.5a75.1 75.1 0 0 0-28.5 6.9l24.2-65.7c.7-2 1.9-3.2 3.4-3.2h29c1.5 0 2.7 1.2 3.4 3.2l24.2 65.7s-11.6-7-28.5-7L67 45.5c-.4-1.7-1.6-2.8-2.9-2.8-1.3 0-2.5 1.1-2.9 2.7L50.4 78.5Zm-1.1 28.2Zm-4.2-20.2c-2 6.6-.6 15.8 4.2 20.2a17.5 17.5 0 0 1 .2-.7 5.5 5.5 0 0 1 5.7-4.5c2.8.1 4.3 1.5 4.7 4.7.2 1.1.2 2.3.2 3.5v.4c0 2.7.7 5.2 2.2 7.4a13 13 0 0 0 5.7 4.9v-.3l-.2-.3c-1.8-5.6-.5-9.5 4.4-12.8l1.5-1a73 73 0 0 0 3.2-2.2 16 16 0 0 0 6.8-11.4c.3-2 .1-4-.6-6l-.8.6-1.6 1a37 37 0 0 1-22.4 2.7c-5-.7-9.7-2-13.2-6.2Z" />
-    <style>
-        path { fill: #000; }
-        @media (prefers-color-scheme: dark) {
-            path { fill: #FFF; }
-        }
-    </style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1024"
+   height="1024"
+   viewBox="0 0 270.93333 270.93333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="JL.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.29852545"
+     inkscape:cx="117.24293"
+     inkscape:cy="324.93042"
+     inkscape:window-width="1648"
+     inkscape:window-height="961"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="text4"
+       style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:180.622px;font-family:'Geist ExtraBold';-inkscape-font-specification:'Geist ExtraBold,  Ultra-Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.133615;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       inkscape:label="L"
+       d="m 152.89584,38.446231 v 81.641529 c 0,8.30861 -1.56506,14.38954 -4.69584,18.24281 -3.01037,3.73286 -7.16508,5.59914 -12.46332,5.59914 -5.41866,0 -9.69324,-2.04712 -12.82402,-6.14122 -3.00784,-4.09066 -4.63272,-10.58648 -4.87568,-19.48563 v -5.81205 L 86.608925,130.63595 V 232.4871 h 88.865895 v -25.64856 h -40.61819 l -4.70772,8.15402 -29.84263,-17.22944 17.6873,-30.63482 0.0434,0.0248 v -0.0181 c 5.24913,1.62221 11.14379,2.44274 17.6997,2.44274 9.63317,0 18.06246,-1.98667 25.28734,-5.96036 7.3453,-4.0941 13.06507,-9.81386 17.15916,-17.15916 4.0941,-7.46571 6.14123,-16.25565 6.14123,-26.37048 V 38.446231 Z" />
+  </g>
 </svg>

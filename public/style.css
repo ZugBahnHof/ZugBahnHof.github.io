@@ -139,7 +139,6 @@ ul.projects li a:hover {
 }
 
 ul.projects li a > img,
-ul.projects li a > iconify-icon,
 ul.projects li a > img,
 ul.projects li a > img,
 ul.projects li a > img,
@@ -224,18 +223,18 @@ ul.links li a:hover::before {
 	);
 }
 
-ul.skills li > iconify-icon,
+ul.skills li > svg,
 ul.skills li > span,
-ul.links li a > iconify-icon,
+ul.links li a > svg,
 ul.links li a > span {
 	width: 1.5em;
 	height: 1.5em;
 	color: var(--fg);
 }
 
-ul.skills li:hover > iconify-icon,
+ul.skills li:hover > svg,
 ul.skills li:hover > span,
-ul.links li a:hover > iconify-icon,
+ul.links li a:hover > svg,
 ul.links li a:hover > span {
 	color: var(--skill-text-color);
 }
@@ -256,7 +255,7 @@ ul.links li a {
 	--skill-text-color: var(--secondary-900);
 }
 
-ul.links li a > iconify-icon,
+ul.links li a > svg,
 ul.links li a > span {
 	color: var(--secondary-900);
 }

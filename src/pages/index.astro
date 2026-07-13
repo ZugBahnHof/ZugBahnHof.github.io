@@ -1,4 +1,11 @@
 ---
+// import "iconify-icon";
+import "@fontsource/host-grotesk";
+import "@fontsource/space-grotesk";
+import "@fontsource/major-mono-display";
+
+import { Icon } from "astro-icon/components";
+
 const buildDate = new Date().toLocaleDateString();
 ---
 
@@ -39,10 +46,10 @@ const buildDate = new Date().toLocaleDateString();
     <ul class="links">
         <li>
             <a href="https://github.com/ZugBahnHof/" style="--skill-color: #000000; --skill-text-color: #FFFFFF;">
-                <iconify-icon
-                    icon="fa6-brands:github"
+                <Icon
+                    name="fa6-brands:github"
                     height="100%"
-                ></iconify-icon>
+                ></Icon>
                 <h3>GitHub</h3>
             </a>
         </li>
@@ -50,10 +57,10 @@ const buildDate = new Date().toLocaleDateString();
         <!--
         <li>
             <a href="https://orcid.org/0009-0008-4558-4608" style="--skill-color: #A6CE39; --skill-text-color: #FFFFFF;">
-                <iconify-icon
-                    icon="fa7-brands:orcid"
+                <Icon
+                    name="fa7-brands:orcid"
                     height="100%"
-                ></iconify-icon>
+                ></Icon>
                 <h3>ORCID</h3>
             </a>
         </li>
@@ -61,10 +68,10 @@ const buildDate = new Date().toLocaleDateString();
         <!--
         <li>
             <a href="https://gitlab.com/ZugBahnHof/" style="--skill-color: #fc6d26; --skill-text-color: #FFFFFF;">
-                <iconify-icon
-                    icon="fa7-brands:gitlab"
+                <Icon
+                    name="fa7-brands:gitlab"
                     height="100%"
-                ></iconify-icon>
+                ></Icon>
                 <h3>GitLab</h3>
             </a>
         </li>
@@ -72,10 +79,10 @@ const buildDate = new Date().toLocaleDateString();
 
         <li>
             <a href="https://edugit.org/ZugBahnHof/" style="--skill-color: #4c654c; --skill-text-color: #FFFFFF;">
-                <iconify-icon
-                    icon="fa7-brands:git"
+                <Icon
+                    name="fa7-brands:git"
                     height="100%"
-                ></iconify-icon>
+                ></Icon>
                 <h3>EduGit</h3>
             </a>
         </li>
@@ -92,10 +99,10 @@ const buildDate = new Date().toLocaleDateString();
         <!--
         <li>
             <a href="https://codeberg.org/ZugBahnHof/" style="--skill-color: #2185d0; --skill-text-color: #FFFFFF;">
-                <iconify-icon
-                    icon="simple-icons:codeberg"
+                <Icon
+                    name="simple-icons:codeberg"
                     height="100%"
-                ></iconify-icon>
+                ></Icon>
                 <h3>Codeberg</h3>
             </a>
         </li>
@@ -117,11 +124,11 @@ const buildDate = new Date().toLocaleDateString();
 
         <li>
             <a href="https://pypi.org/project/color-contrast">
-                <iconify-icon
-                    icon="line-md:confirm-circle-twotone"
+                <Icon
+                    name="line-md:confirm-circle-twotone"
                     height="100%"
                     style="color: var(--text-700);"
-                ></iconify-icon>
+                ></Icon>
                 <h3>color-contrast</h3>
                 <p>A python library to calculate and modulate color contrasts according to WCAG2.1</p>
             </a>
@@ -129,11 +136,11 @@ const buildDate = new Date().toLocaleDateString();
 
         <li>
             <a href="https://yarnpkg.com/package?q=vue-draggable-grid&name=vue-draggable-grid">
-                <iconify-icon
-                    icon="uim:vuejs-alt"
+                <Icon
+                    name="uim:vuejs-alt"
                     height="100%"
                     style="color: var(--text-700);"
-                ></iconify-icon>
+                ></Icon>
                 <h3>Vue Draggable Grid</h3>
                 <p>A library for Vue3 which allows drag&drop functionality in a grid context.</p>
             </a>
@@ -141,11 +148,11 @@ const buildDate = new Date().toLocaleDateString();
 
         <li>
             <a href="https://color-search.netlify.app">
-                <iconify-icon
-                    icon="ion:color-filter-sharp"
+                <Icon
+                    name="ion:color-filter-sharp"
                     height="100%"
                     style="color: var(--text-700);"
-                ></iconify-icon>
+                ></Icon>
                 <h3>Color Tool</h3>
                 <p>Small tool to view and modify colors. Acts as a search engine in your browser.</p>
             </a>
@@ -153,11 +160,11 @@ const buildDate = new Date().toLocaleDateString();
 
         <li>
             <a href="https://github.com/ZugBahnHof/obsidian-plugin-wiener-linien">
-                <iconify-icon
-                    icon="ph:train-duotone"
+                <Icon
+                    name="ph:train-duotone"
                     height="100%"
                     style="color: var(--text-700);"
-                ></iconify-icon>
+                ></Icon>
                 <h3>Obsidian Wiener Linien Plugin</h3>
                 <p>Obsidian Plugin to view next trains at your stations in vienna.</p>
             </a>
@@ -165,11 +172,11 @@ const buildDate = new Date().toLocaleDateString();
 
         <li>
             <a href="https://zugbahnhof.github.io/egg-generator/">
-                <iconify-icon
-                    icon="ph:egg-duotone"
+                <Icon
+                    name="ph:egg-duotone"
                     height="100%"
                     style="color: var(--text-700);"
-                ></iconify-icon>
+                ></Icon>
                 <h3>Egg Generator</h3>
                 <p>Fun side-project which draws eggs on the screen.</p>
             </a>
@@ -177,11 +184,11 @@ const buildDate = new Date().toLocaleDateString();
 
         <li>
             <a href="https://zugbahnhof.github.io/JSCounter/">
-                <iconify-icon
-                    icon="mdi:counter"
+                <Icon
+                    name="mdi:counter"
                     height="100%"
                     style="color: var(--text-700);"
-                ></iconify-icon>
+                ></Icon>
                 <h3>Counter</h3>
                 <p>Big graphic countdown.</p>
             </a>
@@ -189,11 +196,11 @@ const buildDate = new Date().toLocaleDateString();
 
         <li>
             <a href="https://yarnpkg.com/package?q=vue3-interactjs&name=vue3-interactjs">
-                <iconify-icon
-                    icon="simple-icons:interactjs"
+                <Icon
+                    name="simple-icons:interactjs"
                     height="100%"
                     style="color: var(--text-700);"
-                ></iconify-icon>
+                ></Icon>
                 <h3>Vue3-Interactjs</h3>
                 <p>A library wrapping interact.js into Vue3 components.</p>
             </a>
@@ -201,12 +208,12 @@ const buildDate = new Date().toLocaleDateString();
 
         <li>
             <a href="https://heloisewilland.de">
-                <svg
-                    data-src="/images/heloise.svg"
-                    class="icon-container"
+                <Icon
+                    name="heloise"
+                    hanging="100%"
                     style="color: var(--text-700);"
                 >Héloïse Willand personal Logo
-                </svg>
+                </Icon>
                 <h3>Homepage of Héloïse Willand</h3>
                 <p>Wordpress-based homepage of musician and photographer Héloïse Willand.</p>
             </a>
@@ -214,11 +221,11 @@ const buildDate = new Date().toLocaleDateString();
 
         <li>
             <a href="/fluid-sim/">
-                <iconify-icon
-                    icon="fluent-emoji-high-contrast:water-wave"
+                <Icon
+                    name="fluent-emoji-high-contrast:water-wave"
                     height="100%"
                     style="color: var(--text-700);"
-                ></iconify-icon>
+                ></Icon>
                 <h3>Web Gyroscope Demo</h3>
                 <p>Fluid simulating side-project using the web device accelerator api.</p>
             </a>
@@ -230,185 +237,185 @@ const buildDate = new Date().toLocaleDateString();
     <h2>Skills</h2>
     <ul class="skills">
         <li style="--skill-color: #3776AB; --skill-text-color: #FFFFFF; --n: 1;">
-            <iconify-icon
-                icon="mdi:language-python"
+            <Icon
+                name="mdi:language-python"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Python</h3>
         </li>
         <li style="--skill-color: #F7DF1E; --skill-text-color: #000000; --n: 2;">
-            <iconify-icon
-                icon="mdi:language-javascript"
+            <Icon
+                name="mdi:language-javascript"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>JavaScript</h3>
         </li>
         <li style="--skill-color: #3178C6; --skill-text-color: #FFFFFF; --n: 3;">
-            <iconify-icon
-                icon="mdi:language-typescript"
+            <Icon
+                name="mdi:language-typescript"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>TypeScript</h3>
         </li>
         <li style="--skill-color: #4FC08D; --skill-text-color: #FFFFFF; --n: 4;">
-            <iconify-icon
-                icon="mdi:vuejs"
+            <Icon
+                name="mdi:vuejs"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>VueJS</h3>
         </li>
         <li style="--skill-color: #1867c0; --skill-text-color: #FFFFFF; --n: 5;">
-            <iconify-icon
-                icon="mdi:vuetify"
+            <Icon
+                name="mdi:vuetify"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Vuetify</h3>
         </li>
         <li style="--skill-color: #379ad5; --skill-text-color: #FFFFFF; --n: 6;">
-            <iconify-icon
-                icon="mdi:language-css3"
+            <Icon
+                name="mdi:language-css3"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>CSS</h3>
         </li>
         <li style="--skill-color: #3858e9; --skill-text-color: #FFFFFF; --n: 7;">
-            <iconify-icon
-                icon="mdi:wordpress"
+            <Icon
+                name="mdi:wordpress"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Wordpress</h3>
         </li>
         <li style="--skill-color: #0c4b33; --skill-text-color: #FFFFFF; --n: 8;">
-            <iconify-icon
-                icon="devicon-plain:django"
+            <Icon
+                name="devicon-plain:django"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Django</h3>
         </li>
         <li style="--skill-color: #f1502f; --skill-text-color: #FFFFFF; --n: 9;">
-            <iconify-icon
-                icon="devicon-plain:prolog"
+            <Icon
+                name="devicon-plain:prolog"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Prolog</h3>
         </li>
         <li style="--skill-color: #7a23a1; --skill-text-color: #FFFFFF; --n: 10;">
-            <iconify-icon
-                icon="lineicons:vite"
+            <Icon
+                name="lineicons:vite"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Vite</h3>
         </li>
         <li style="--n: 11;">
-            <iconify-icon
-                icon="mdi:camera"
+            <Icon
+                name="mdi:camera"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Photography</h3>
         </li>
         <li style="--skill-color: #b07219; --skill-text-color: #FFFFFF; --n: 12;">
-            <iconify-icon
-                icon="mdi:language-java"
+            <Icon
+                name="mdi:language-java"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Java</h3>
         </li>
         <li style="--skill-color: rgb(225, 0, 154); --skill-text-color: #FFFFFF; --n: 13;">
-            <iconify-icon
-                icon="mdi:graphql"
+            <Icon
+                name="mdi:graphql"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>GraphQL</h3>
         </li>
         <li style="--skill-color: #ff6f61; --skill-text-color: #FFFFFF; --n: 14;">
-            <iconify-icon
-                icon="mdi:api"
+            <Icon
+                name="mdi:api"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>REST</h3>
         </li>
         <li style="--skill-color: #5e5086; --skill-text-color: #FFFFFF; --n: 15;">
-            <iconify-icon
-                icon="mdi:language-haskell"
+            <Icon
+                name="mdi:language-haskell"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Haskell</h3>
         </li>
         <li style="--skill-color: #abbbce; --skill-text-color: #222222; --n: 16;">
-            <iconify-icon
-                icon="mdi:language-c"
+            <Icon
+                name="mdi:language-c"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>C</h3>
         </li>
         <li style="--skill-color: #FFFFFF; --skill-text-color: #000000; --n: 17;">
-            <iconify-icon
-                icon="solar:figma-bold-duotone"
+            <Icon
+                name="solar:figma-bold-duotone"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Figma</h3>
         </li>
         <li style="--n: 18;">
-            <iconify-icon
-                icon="file-icons:latex"
+            <Icon
+                name="file-icons:latex"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>LaTeX</h3>
         </li>
         <li style="--skill-color: #f31199; --skill-text-color: #222222; --n: 19;">
-            <iconify-icon
-                icon="simple-icons:jetbrains"
+            <Icon
+                name="simple-icons:jetbrains"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>JetBrains IDEs</h3>
         </li>
         <li style="--skill-color: #de3412; --skill-text-color: #222222; --n: 20;">
-            <iconify-icon
-                icon="cib:pytorch"
+            <Icon
+                name="cib:pytorch"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>PyTorch</h3>
         </li>
         <li style="--skill-color: #0553B1; --skill-text-color: #FFFFFF; --n: 21;">
-            <iconify-icon
-                icon="devicon-plain:flutter"
+            <Icon
+                name="devicon-plain:flutter"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Flutter</h3>
         </li>
         <li style="--n: 22;">
-            <iconify-icon
-                icon="bitcoin-icons:node-2-connections-outline"
+            <Icon
+                name="bitcoin-icons:node-2-connections-outline"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Problog</h3>
         </li>
         <li style="--skill-color: #00979D; --skill-text-color: #FFFFFF; --n: 23;">
-            <iconify-icon
-                icon="devicon-plain:arduino"
+            <Icon
+                name="devicon-plain:arduino"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Arduino</h3>
         </li>
         <li style="--skill-color: #FF3E00; --skill-text-color: #FFFFFF; --n: 24;">
-            <iconify-icon
-                icon="devicon-plain:svelte"
+            <Icon
+                name="devicon-plain:svelte"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Svelte</h3>
         </li>
         <li style="--skill-color: #316192; --skill-text-color: #FFFFFF; --n: 25;">
-            <iconify-icon
-                icon="devicon-plain:postgresql"
+            <Icon
+                name="devicon-plain:postgresql"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>PostgreSQL</h3>
         </li>
         <li style="--skill-color: #6cb52d; --skill-text-color: #FFFFFF; --n: 25;">
-            <iconify-icon
-                icon="bxl:spring-boot"
+            <Icon
+                name="bxl:spring-boot"
                 height="100%"
-            ></iconify-icon>
+            ></Icon>
             <h3>Spring Boot</h3>
         </li>
     </ul>
@@ -433,13 +440,15 @@ const buildDate = new Date().toLocaleDateString();
         </p>
         <p>
             It can be translated as »TrainTrainStation«.
-            While I do enjoy taking trains, I do not have a hightended interest in them, even if the name might
+            While I do enjoy taking trains, I do not have a heightened interest in them, even if the name might
             suggest otherwise.
         </p>
     </details>
     <p>2: AlekSIS® is a registered trademark of the AlekSIS open source project, represented by Teckids e.V.</p>
     <p>Last built on: {buildDate}</p>
 </footer>
-<script type="module" src="/src/main.js"></script>
+<!--<script type="module">-->
+<!--  import "../main.js";-->
+<!--</script>-->
 </body>
 </html>

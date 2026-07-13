@@ -1,0 +1,69 @@
+---
+import { Icon } from "astro-icon/components";
+import { SKILLS, TAGS } from "./content/skills.ts";
+
+const hoverRules = Object.keys(TAGS)
+	.map(
+		(skill) => `
+.skill-wrapper:has(.tag.${skill}:hover) .skill.${skill} {
+    opacity: 1;
+    filter: none;
+}`,
+	)
+	.join("\n");
+---
+<div class="skill-wrapper">
+<ul class="tags">
+{Object.entries(TAGS).map(([key, tag]) => (
+<li class={`tag ${key}`}>{tag}</li>
+    ))}
+</ul>
+<ul class="skills" style={{"--count": SKILLS.length}}>
+    {SKILLS.map((skill, index) => (
+        <li
+            style={`--skill-color: ${skill.color}; --skill-text-color: ${skill.textColor}; --n: ${index + 1};`}
+            class={`skill ${skill.tags.join(" ")}`}
+        >
+            <Icon
+                name={skill.icon}
+                height="100%"
+            ></Icon>
+            <h3>{skill.name}</h3>
+        </li>
+    ))}
+</ul>
+</div>
+
+<style is:global>
+.skill {
+    transition:
+        opacity .25s ease,
+        filter .25s ease,
+        transform .25s ease;
+}
+
+.tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tag {
+    transition: color .25s ease, background-color .5s ease;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.tag:hover {
+    color: var(--accent-700);
+    background-color: var(--accent-100);
+}
+
+.skill-wrapper:has(.tag:hover) .skill {
+    opacity: .35;
+    filter: grayscale(1);
+}
+</style>
+<style is:global set:html={hoverRules}></style>

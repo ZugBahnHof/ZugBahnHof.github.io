@@ -98,6 +98,13 @@ export const SKILLS: Skill[] = [
 		tags: ["frontend", "devops"],
 	},
 	{
+		name: "OpenID Connect",
+		icon: "mdi:openid",
+		color: "#eb7c04",
+		textColor: "#FFFFFF",
+		tags: ["backend", "network", "devops"],
+	},
+	{
 		name: "Neo4J",
 		icon: "simple-icons:neo4j",
 		color: "#0a5d8a",

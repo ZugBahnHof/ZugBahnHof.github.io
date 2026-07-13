@@ -6,7 +6,8 @@ import "@fontsource/major-mono-display";
 
 import { Icon } from "astro-icon/components";
 import { PROJECTS } from "../content/projects.ts";
-import { SKILLS } from "../content/skills.ts";
+import { SKILLS, TAGS } from "../content/skills.ts";
+import Skills from "../skills.astro";
 
 const buildDate = new Date().toLocaleDateString();
 ---
@@ -138,17 +139,7 @@ const buildDate = new Date().toLocaleDateString();
 
     <section>
     <h2>Skills</h2>
-    <ul class="skills" style={{ "--count": SKILLS.length }}>
-        {SKILLS.map((skill, index) => (
-            <li style={`--skill-color: ${skill.color}; --skill-text-color: ${skill.textColor}; --n: ${index + 1};`}>
-                <Icon
-                    name={skill.icon}
-                    height="100%"
-                ></Icon>
-                <h3>{skill.name}</h3>
-            </li>
-        ))}
-    </ul>
+    <Skills />
     </section>
 </main>
 

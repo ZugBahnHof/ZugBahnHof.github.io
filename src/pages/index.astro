@@ -38,16 +38,6 @@ const buildDate = new Date().toLocaleDateString();
         <h1>
             <span class="h2">Hi, I'm</span> <br />
             <span id="name">JULIAN LEUCKER</span>!</h1>
-        <h2>Welcome to my homepage!</h2>
-    </div>
-</header>
-<main>
-    <section>
-    <h2>Where to find me</h2>
-
-    My work can be found on different git hosters, usually under the username <code>ZugBahnHof</code>¹.
-    Find me on:
-
     <ul class="links">
         <li>
             <a href="https://github.com/ZugBahnHof/" style="--skill-color: #000000; --skill-text-color: #FFFFFF;">
@@ -82,8 +72,9 @@ const buildDate = new Date().toLocaleDateString();
         </li>
         -->
 
+        <!--
         <li>
-            <a href="https://edugit.org/ZugBahnHof/" style="--skill-color: #4c654c; --skill-text-color: #FFFFFF;">
+            <a href="https://code.teckids.org/ZugBahnHof/" style="--skill-color: #4c654c; --skill-text-color: #FFFFFF;">
                 <Icon
                     name="fa7-brands:git"
                     height="100%"
@@ -91,6 +82,7 @@ const buildDate = new Date().toLocaleDateString();
                 <h3>EduGit</h3>
             </a>
         </li>
+        -->
 
         <!--
         <li>
@@ -113,10 +105,15 @@ const buildDate = new Date().toLocaleDateString();
         </li>
         -->
     </ul>
-    </section>
-
+    </div>
+</header>
+<main>
     <section>
     <h2>My Projects</h2>
+    <p>
+        I have been programming for a long time, and I have worked on many projects, both for school and for fun.
+        My work can be found on different git hosters, usually under the username <code>ZugBahnHof</code>¹.
+    </p>
     <ul class="projects">
         {PROJECTS.map((project) => (
             <li>
@@ -139,7 +136,7 @@ const buildDate = new Date().toLocaleDateString();
     </ul>
     </section>
 
-    <section>
+    <section id="skills">
     <h2>Skills</h2>
     <Skills />
     </section>

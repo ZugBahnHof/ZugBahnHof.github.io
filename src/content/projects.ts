@@ -20,8 +20,7 @@ export const PROJECTS: Project[] = [
 		name: "AlekSIS®²",
 		description:
 			"Participated in the development of the open source school information system.",
-		image:
-			"https://edugit.org/AlekSIS/official/AlekSIS-Core/-/raw/master/aleksis/core/static/img/aleksis-icon.svg?ref_type=heads&inline=false",
+		image: "https://aleksis.org/_index/aleksis-icon.svg",
 		imageAlt: "AlekSIS® Logo",
 		url: "https://aleksis.org",
 	},

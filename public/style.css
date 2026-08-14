@@ -48,16 +48,25 @@ header > figure {
 	justify-content: center;
 	margin: 0;
 }
-section {
-	margin-block-end: 2rem;
+section,
+header {
+	margin-block-end: 4rem;
 	outline: 0.25em dashed transparent;
 	border-radius: 1em;
 	outline-offset: 0.6rem;
+	min-height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+header {
+	flex-direction: row;
 }
 section:hover {
 	outline-color: var(--secondary-400);
 }
-section:nth-child(even):hover {
+section:nth-child(even):hover,
+header:hover {
 	outline-color: var(--primary-400);
 }
 
@@ -167,6 +176,9 @@ ul.links {
 	gap: 0.5rem;
 
 	--count: 1;
+}
+ul.links {
+	margin: 0;
 }
 
 ul.skills li,

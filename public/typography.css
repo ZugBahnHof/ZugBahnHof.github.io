@@ -24,6 +24,7 @@ iconify-icon {
 
 #name {
 	font-family:
+		"Nanum Pen Script",
 		"Ænigma Scrawl 4 BRK", "League Spartan", "Impossibilium BRK",
 		"system-ui", sans-serif;
 	background: linear-gradient(45deg, var(--secondary-500), var(--primary-500));

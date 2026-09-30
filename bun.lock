@@ -7,7 +7,7 @@
       "dependencies": {
         "@biomejs/biome": "^2.5.3",
         "@fontsource/host-grotesk": "^5.2.8",
-        "@fontsource/major-mono-display": "^5.2.8",
+        "@fontsource/nanum-pen-script": "^5.3.0",
         "@fontsource/space-grotesk": "^5.2.8",
         "astro": "^7.0.7",
         "astro-icon": "^1.1.5",
@@ -179,7 +179,7 @@
 
     "@fontsource/host-grotesk": ["@fontsource/host-grotesk@5.2.8", "", {}, "sha512-bRSd8xBXXFbIU9oTIkecdcUjroUf0a7qtGM4J7oJeb86QXX2FiLt16H8n8PGc4SLsL/isRgm3N3ncPs3Vzz3ig=="],
 
-    "@fontsource/major-mono-display": ["@fontsource/major-mono-display@5.2.8", "", {}, "sha512-SnuZlOm1y9NT1sdXoAL8RXK3wuNHSmkHTReVmeRRTbBqbT5trIN46DPFoN5gzdf1nY9OYi7fknekEUG94dovKA=="],
+    "@fontsource/nanum-pen-script": ["@fontsource/nanum-pen-script@5.3.0", "", {}, "sha512-at9MFL8ga0A3Xce1+CO6/56F/SHIlf++D4vVKw3yCNRPKh6JU0UgZ3r9un0qHPVxx0Miq2bGZ35RRRlu/4BIDg=="],
 
     "@fontsource/space-grotesk": ["@fontsource/space-grotesk@5.2.10", "", {}, "sha512-XNXEbT74OIITPqw2H6HXwPDp85fy43uxfBwFR5PU+9sLnjuLj12KlhVM9nZVN6q6dlKjkuN8JisW/OBxwxgUew=="],
 
